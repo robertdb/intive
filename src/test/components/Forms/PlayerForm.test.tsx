@@ -43,11 +43,11 @@ describe('My form default should work fine', () => {
 describe('My form should be update properly', () => {
   let wrapper: enzyme.ReactWrapper<any, Readonly<{}>, React.Component<{}, {}, any>>;
   beforeEach(() => {
-    const position = [
+    const positions = [
       {value: "striker", content: "Striker"}, 
       {value: "goalkepper", content: "Goalkepper"}
     ];
-    wrapper = mount(<PlayerForm position={position}/>);
+    wrapper = mount(<PlayerForm positions={positions}/>);
   });
 
   test('should position update to striker properly', () => {
