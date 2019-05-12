@@ -4,14 +4,14 @@ export * from './validation';
 export interface MyFormValues {
     name: string;
     position: string;
-    age: number | undefined
+    age: string
 }
 
 // The type of props MyForm receives
 export interface MyFormProps {
     initialName?: string;
     initialPosition?: string;
-    initialAge?: number | undefined,
+    initialAge?: string,
     positions?: Array<Option>
 }
 

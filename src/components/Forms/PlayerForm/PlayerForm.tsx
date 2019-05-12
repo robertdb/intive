@@ -89,7 +89,7 @@ export const PlayerForm = withFormik<MyFormProps, MyFormValues>({
         return {
             name: props.initialName || '',
             position: props.initialPosition || 'position',
-            age: props.initialAge || undefined
+            age: props.initialAge || ''
         };
     },
 
