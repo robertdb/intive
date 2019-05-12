@@ -2,7 +2,7 @@ import {
     ActionCreator,
     AnyAction
 } from 'redux';
-import { calculateAge } from './preprocessingData';
+import { calculateAge, mapPositionsPlayers } from './preprocessingData';
 import {
     ThunkAction,
     ThunkDispatch
@@ -17,6 +17,7 @@ import {
     SET_PLAYERS,
     IPlayer
 } from './types';
+import { setPositionPlayer } from '../positions/actions';
 
 import { fetchPlayers } from '../../services/players';
 
@@ -46,15 +47,18 @@ export const setPlayers = (): ThunkAction<Promise<void>, {}, {}, AnyAction> => {
             const data = await fetchPlayers();
             if (data instanceof Array) {
                 let player = data.map((item: any) => {
-                    const { name, position, dateOfBirth } = item;
+                    const { name, position, dateOfBirth, nationality } = item;
                     return {
                         name,
                         position,
+                        nationality,
                         age: calculateAge(dateOfBirth)
                     }
                 })
                 dispatch(setPlayerCreator(player));
             }
+
+            dispatch(setPositionPlayer(mapPositionsPlayers(data)));
             dispatch(fetchingPlayersCreator(false));
         } catch (error) {
             dispatch(fetchingPlayersCreator(false));
