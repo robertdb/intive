@@ -4,26 +4,25 @@ import { IPlayer } from '../../store/players/types';
 import { ApplicationState } from '../../store';
 import { connect } from 'react-redux';
 import { ThunkDispatch } from 'redux-thunk'
+import { selectotPlayers } from '../../store/selectors/player';
 
 interface DispatchProps {
     setPlayers: () => void,
 }
 
-
 interface StateProps {
     players: Array<IPlayer>,
     fetchingPlayers: boolean,
-    error: null | string,
-    name: string
+    error: null | string
 }
 export type Props = StateProps & DispatchProps;
 
 
-export function mapStateToProps({ players }: ApplicationState) {
+export function mapStateToProps(state: ApplicationState) {
     return {
-        players: players.players,
-        fetchingPlayers: players.isFetching,
-        error: players.error,
+        players: selectotPlayers(state),
+        fetchingPlayers: state.players.isFetching,
+        error: state.players.error,
     };
 }
 

@@ -15,7 +15,7 @@ const Home = ({
             setPlayers();
         }
     });
-
+    console.log(players);
     return (
         <div>
             <PlayerForm positions={[{ value: "striker", content: "Striker" }]} />
