@@ -8,28 +8,30 @@ const Home = ({
     players,
     fetchingPlayers,
     error,
-    setPlayers
+    setPlayers,
+    positions,
+    setFilterPlayers
 }: Props) => {
     useEffect(() => {
         if (fetchingPlayers === null) {
             setPlayers();
         }
     });
-    console.log(players);
     return (
         <div>
-            <PlayerForm positions={[{ value: "striker", content: "Striker" }]} />
-            <TablePlayers />
             {(fetchingPlayers || fetchingPlayers == null) ?
                 <div>Loading ...</div>
                 :
                 error ?
                     <div style={{ color: 'red' }}>{error}</div>
                     :
-                    players.length == 0 ?
-                        <div>No result ...</div>
-                        :
-                        <div>Success!</div>
+                    <React.Fragment>
+                        <PlayerForm
+                            positions={positions}
+                            setFilterPlayers={setFilterPlayers}
+                        />
+                        <TablePlayers players={players} />
+                    </React.Fragment>
             }
         </div>
     );

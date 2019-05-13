@@ -15,7 +15,8 @@ export type ERROR_PLAYERS_REQUEST = typeof ERROR_PLAYERS_REQUEST;
 export interface IPlayer {
     name: string,
     position: string,
-    age: string
+    age: string,
+    nationality: string
 }
 
 

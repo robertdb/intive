@@ -2,17 +2,18 @@ export * from './PlayerForm';
 export * from './validation';
 
 export interface MyFormValues {
-    name: string;
-    position: string;
+    name: string,
+    position: string,
     age: string
 }
 
 // The type of props MyForm receives
 export interface MyFormProps {
-    initialName?: string;
-    initialPosition?: string;
+    initialName?: string,
+    initialPosition?: string,
     initialAge?: string,
-    positions?: Array<Option>
+    positions?: Array<Option>,
+    setFilterPlayers: (filters: MyFormValues) => void
 }
 
 interface Option {
@@ -21,5 +22,6 @@ interface Option {
 }
 
 export interface OtherProps {
-    positions?: Array<Option>
+    positions?: Array<Option>,
+    setFilterPlayers: (filters: MyFormValues) => void
 }

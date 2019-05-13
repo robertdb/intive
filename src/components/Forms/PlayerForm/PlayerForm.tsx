@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { withFormik, FormikProps, FormikActions } from 'formik';
+import { withFormik, FormikProps, FormikBag } from 'formik';
 import { SearchablePlayerSchema } from './validation';
 import { MyFormValues, MyFormProps, OtherProps } from './';
 import {
@@ -96,9 +96,11 @@ export const PlayerForm = withFormik<MyFormProps, MyFormValues>({
     // Add a custom validation function (this can be async too!)
     validationSchema: SearchablePlayerSchema,
 
-    handleSubmit: (values: MyFormValues, actions: FormikActions<MyFormValues>) => {
-        console.log({ values, actions });
-        alert(JSON.stringify(values, null, 2));
-        actions.setSubmitting(false)
+    handleSubmit: (values: MyFormValues, formikBag: FormikBag<OtherProps, MyFormValues>) => {
+        const { setFilterPlayers } = formikBag.props;
+        const { setSubmitting } = formikBag;
+        values.age = values.age.toString(); 
+        setFilterPlayers(values)
+        setSubmitting(false);
     }
 })(InnerForm);

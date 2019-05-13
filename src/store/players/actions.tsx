@@ -46,7 +46,7 @@ export const setPlayers = (): ThunkAction<Promise<void>, {}, {}, AnyAction> => {
         try {
             const data = await fetchPlayers();
             if (data instanceof Array) {
-                let player = data.map((item: any) => {
+                let players = data.map((item: any) => {
                     const { name, position, dateOfBirth, nationality } = item;
                     return {
                         name,
@@ -55,7 +55,7 @@ export const setPlayers = (): ThunkAction<Promise<void>, {}, {}, AnyAction> => {
                         age: calculateAge(dateOfBirth)
                     }
                 })
-                dispatch(setPlayerCreator(player));
+                dispatch(setPlayerCreator(players));
             }
 
             dispatch(setPositionPlayer(mapPositionsPlayers(data)));
