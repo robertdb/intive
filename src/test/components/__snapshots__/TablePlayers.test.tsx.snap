@@ -1,0 +1,657 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MyComponent should render correctly in "debug" mode 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <TablePlayers
+    players={Array []}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": <Table>
+        <Thead>
+                <Tr>
+                        <Th>
+                                Player
+                        </Th>
+                        <Th>
+                                Position
+                        </Th>
+                        <Th>
+                                Nationality
+                        </Th>
+                        <Th>
+                                Age
+                        </Th>
+                </Tr>
+        </Thead>
+        <Tbody>
+                <Tr>
+                        <Td>
+                                -
+                        </Td>
+                        <Td>
+                                -
+                        </Td>
+                        <Td>
+                                -
+                        </Td>
+                        <Td>
+                                -
+                        </Td>
+                </Tr>
+        </Tbody>
+</Table>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <Thead>
+            <Tr>
+                        <Th>
+                                    Player
+                        </Th>
+                        <Th>
+                                    Position
+                        </Th>
+                        <Th>
+                                    Nationality
+                        </Th>
+                        <Th>
+                                    Age
+                        </Th>
+            </Tr>
+</Thead>,
+          <Tbody>
+            <Tr>
+                        <Td>
+                                    -
+                        </Td>
+                        <Td>
+                                    -
+                        </Td>
+                        <Td>
+                                    -
+                        </Td>
+                        <Td>
+                                    -
+                        </Td>
+            </Tr>
+</Tbody>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": <Tr>
+              <Th>
+                            Player
+              </Th>
+              <Th>
+                            Position
+              </Th>
+              <Th>
+                            Nationality
+              </Th>
+              <Th>
+                            Age
+              </Th>
+</Tr>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <Th>
+                  Player
+</Th>,
+                <Th>
+                  Position
+</Th>,
+                <Th>
+                  Nationality
+</Th>,
+                <Th>
+                  Age
+</Th>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": "Player",
+                },
+                "ref": null,
+                "rendered": "Player",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": "Position",
+                },
+                "ref": null,
+                "rendered": "Position",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": "Nationality",
+                },
+                "ref": null,
+                "rendered": "Nationality",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": "Age",
+                },
+                "ref": null,
+                "rendered": "Age",
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <Tr>
+                <Td>
+                                -
+                </Td>
+                <Td>
+                                -
+                </Td>
+                <Td>
+                                -
+                </Td>
+                <Td>
+                                -
+                </Td>
+</Tr>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "function",
+              "props": Object {
+                "children": Array [
+                  <Td>
+                    -
+</Td>,
+                  <Td>
+                    -
+</Td>,
+                  <Td>
+                    -
+</Td>,
+                  <Td>
+                    -
+</Td>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": "-",
+                  },
+                  "ref": null,
+                  "rendered": "-",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": "-",
+                  },
+                  "ref": null,
+                  "rendered": "-",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": "-",
+                  },
+                  "ref": null,
+                  "rendered": "-",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": "-",
+                  },
+                  "ref": null,
+                  "rendered": "-",
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+    "type": Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-bdVaJa",
+        "isStatic": true,
+        "rules": Array [
+          "
+    margin-top: 2rem;
+    & > table > thead > tr > th {
+        background-color: #000;
+        color: #fff;
+        font-size: 1.5rem;
+    }
+    & > table > tbody > tr > td {
+        padding: 20px
+        font-size: 1rem;
+        background-color: #ccc;
+    }
+",
+        ],
+      },
+      "displayName": "styled.div",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "sc-bdVaJa",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    },
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <Table>
+          <Thead>
+                    <Tr>
+                              <Th>
+                                        Player
+                              </Th>
+                              <Th>
+                                        Position
+                              </Th>
+                              <Th>
+                                        Nationality
+                              </Th>
+                              <Th>
+                                        Age
+                              </Th>
+                    </Tr>
+          </Thead>
+          <Tbody>
+                    <Tr>
+                              <Td>
+                                        -
+                              </Td>
+                              <Td>
+                                        -
+                              </Td>
+                              <Td>
+                                        -
+                              </Td>
+                              <Td>
+                                        -
+                              </Td>
+                    </Tr>
+          </Tbody>
+</Table>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Thead>
+              <Tr>
+                            <Th>
+                                          Player
+                            </Th>
+                            <Th>
+                                          Position
+                            </Th>
+                            <Th>
+                                          Nationality
+                            </Th>
+                            <Th>
+                                          Age
+                            </Th>
+              </Tr>
+</Thead>,
+            <Tbody>
+              <Tr>
+                            <Td>
+                                          -
+                            </Td>
+                            <Td>
+                                          -
+                            </Td>
+                            <Td>
+                                          -
+                            </Td>
+                            <Td>
+                                          -
+                            </Td>
+              </Tr>
+</Tbody>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": <Tr>
+                <Th>
+                                Player
+                </Th>
+                <Th>
+                                Position
+                </Th>
+                <Th>
+                                Nationality
+                </Th>
+                <Th>
+                                Age
+                </Th>
+</Tr>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": Array [
+                  <Th>
+                    Player
+</Th>,
+                  <Th>
+                    Position
+</Th>,
+                  <Th>
+                    Nationality
+</Th>,
+                  <Th>
+                    Age
+</Th>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": "Player",
+                  },
+                  "ref": null,
+                  "rendered": "Player",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": "Position",
+                  },
+                  "ref": null,
+                  "rendered": "Position",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": "Nationality",
+                  },
+                  "ref": null,
+                  "rendered": "Nationality",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": "Age",
+                  },
+                  "ref": null,
+                  "rendered": "Age",
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <Tr>
+                  <Td>
+                                    -
+                  </Td>
+                  <Td>
+                                    -
+                  </Td>
+                  <Td>
+                                    -
+                  </Td>
+                  <Td>
+                                    -
+                  </Td>
+</Tr>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "0",
+                "nodeType": "function",
+                "props": Object {
+                  "children": Array [
+                    <Td>
+                      -
+</Td>,
+                    <Td>
+                      -
+</Td>,
+                    <Td>
+                      -
+</Td>,
+                    <Td>
+                      -
+</Td>,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "children": "-",
+                    },
+                    "ref": null,
+                    "rendered": "-",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "children": "-",
+                    },
+                    "ref": null,
+                    "rendered": "-",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "children": "-",
+                    },
+                    "ref": null,
+                    "rendered": "-",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "children": "-",
+                    },
+                    "ref": null,
+                    "rendered": "-",
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bdVaJa",
+          "isStatic": true,
+          "rules": Array [
+            "
+    margin-top: 2rem;
+    & > table > thead > tr > th {
+        background-color: #000;
+        color: #fff;
+        font-size: 1.5rem;
+    }
+    & > table > tbody > tr > td {
+        padding: 20px
+        font-size: 1rem;
+        background-color: #ccc;
+    }
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bdVaJa",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

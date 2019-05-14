@@ -16,7 +16,7 @@ export interface IPlayersReducer {
     error: null | string;
 }
 
-const initialState: IPlayersReducer = {
+export const initialState: IPlayersReducer = {
     isFetching: null,
     players: [],
     error: null,

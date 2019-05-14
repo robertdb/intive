@@ -34,7 +34,7 @@ export const fetchingPlayersCreator: ActionCreator<IfetchingPlayers> = (fetching
         fetching
     }
 })
-export const errorCharacterRequest: ActionCreator<IErrorPlayerRequest> = () => ({
+export const errorPlayerrRequest: ActionCreator<IErrorPlayerRequest> = () => ({
     type: ERROR_PLAYERS_REQUEST,
 })
 
@@ -62,7 +62,7 @@ export const setPlayers = (): ThunkAction<Promise<void>, {}, {}, AnyAction> => {
             dispatch(fetchingPlayersCreator(false));
         } catch (error) {
             dispatch(fetchingPlayersCreator(false));
-            dispatch(errorCharacterRequest());
+            dispatch(errorPlayerrRequest());
             console.log('Awkward situation, api players not working');
         }
     }

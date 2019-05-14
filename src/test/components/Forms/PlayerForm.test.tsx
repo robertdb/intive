@@ -3,12 +3,18 @@ import * as enzyme from 'enzyme';
 import '../../setupTest';
 import { PlayerForm, InnerForm, MyFormValues } from '../../../components/Forms/PlayerForm';
 
-const { mount } = enzyme;
+const { mount, shallow } = enzyme;
+describe('MyComponent', () => {
+  it('should render correctly in "debug" mode', () => {
+    const component = shallow(<PlayerForm setFilterPlayers={(filters: MyFormValues) => null} />);
+    expect(component).toMatchSnapshot();
+  });
+});
 
 describe('Input should be update properly', () => {
   test('should name works', () => {
     const name = 'name', value = 'yuri'
-    let wrapper = mount(<PlayerForm setFilterPlayers={(filters: MyFormValues )=> null}/>);
+    let wrapper = mount(<PlayerForm setFilterPlayers={(filters: MyFormValues) => null} />);
     wrapper
       .find(`input[name="${name}"]`)
       .simulate('change', { target: { name, value } })
@@ -17,7 +23,7 @@ describe('Input should be update properly', () => {
   })
   test('should age works', () => {
     const age = 'age', value = 18;
-    let wrapper = mount(<PlayerForm setFilterPlayers={(filters: MyFormValues )=> null}/>);
+    let wrapper = mount(<PlayerForm setFilterPlayers={(filters: MyFormValues) => null} />);
     wrapper
       .find(`input[name="${age}"]`)
       .simulate('change', { target: { name, value } })
@@ -29,7 +35,7 @@ describe('Input should be update properly', () => {
 describe('My form default should work fine', () => {
   let wrapper: enzyme.ReactWrapper<any, Readonly<{}>, React.Component<{}, {}, any>>;
   beforeEach(() => {
-    wrapper = mount(<PlayerForm setFilterPlayers={(filters: MyFormValues )=> null}/>);
+    wrapper = mount(<PlayerForm setFilterPlayers={(filters: MyFormValues) => null} />);
   });
 
   test('should position default value exists', () => {
@@ -45,10 +51,10 @@ describe('My form should be update properly', () => {
   let wrapper: enzyme.ReactWrapper<any, Readonly<{}>, React.Component<{}, {}, any>>;
   beforeEach(() => {
     const positions = [
-      {value: "striker", content: "Striker"}, 
-      {value: "goalkepper", content: "Goalkepper"}
+      { value: "striker", content: "Striker" },
+      { value: "goalkepper", content: "Goalkepper" }
     ];
-    wrapper = mount(<PlayerForm positions={positions} setFilterPlayers={(filters: MyFormValues )=> null}/>);
+    wrapper = mount(<PlayerForm positions={positions} setFilterPlayers={(filters: MyFormValues) => null} />);
   });
 
   test('should position update to striker properly', () => {
@@ -63,7 +69,7 @@ describe('My form should be update properly', () => {
 describe('Submit should work properly', () => {
 
   test('submits the form', () => {
-    let wrapper = mount(<PlayerForm setFilterPlayers={(filters: MyFormValues )=> null}/>);
+    let wrapper = mount(<PlayerForm setFilterPlayers={(filters: MyFormValues) => null} />);
     expect(wrapper.find(InnerForm).find('#submitting')).toHaveLength(0);
 
     // simulate submit event. this is always sync! async calls to setState are swallowed. 

@@ -65,6 +65,7 @@ export const InnerForm = (props: OtherProps & FormikProps<MyFormValues>) => {
                 onBlur={handleBlur}
                 value={values.age}
                 name="age"
+                placeholder="Age"
             />
             {touched.age &&
                 errors.age &&

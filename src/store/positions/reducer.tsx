@@ -8,7 +8,7 @@ export interface IPositionPlayersReducer {
     positionPlayers: Array<PositionOption> | []
 }
 
-const initialState: IPositionPlayersReducer = {
+export const initialState: IPositionPlayersReducer = {
     positionPlayers: []
 }
 

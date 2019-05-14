@@ -6,7 +6,7 @@ import {
 
 export interface IFilterPlayersReducer extends IFilterPlayer { };
 
-const initialState: IFilterPlayersReducer = {
+export const initialState: IFilterPlayersReducer = {
     name: 'all',
     position: 'all',
     age: 'all'
