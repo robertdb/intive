@@ -3,12 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@types/moxios": "^0.4.8",
+    "@types/react-lottie": "^1.2.2",
     "@types/react-redux": "^7.0.8",
+    "@types/react-test-renderer": "^16.8.1",
+    "@types/redux-mock-store": "^1.0.1",
     "@types/yup": "^0.26.13",
     "axios": "^0.18.0",
     "formik": "^1.5.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-lottie": "^1.2.3",
     "react-redux": "^7.0.3",
     "react-scripts-ts": "3.1.0",
     "react-super-responsive-table": "git+https://github.com/robertdb/react-super-responsive-table.git",
@@ -21,7 +26,7 @@
   "scripts": {
     "start": "react-scripts-ts start",
     "build": "react-scripts-ts build",
-    "test": "react-scripts-ts test --env=jsdom",
+    "test": "react-scripts-ts test --env=jsdom --coverage",
     "eject": "react-scripts-ts eject"
   },
   "devDependencies": {
@@ -34,8 +39,10 @@
     "@types/styled-components": "4.1.8",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.13.0",
+    "moxios": "^0.4.0",
     "react-test-renderer": "^16.8.6",
     "redux-devtools-extension": "^2.13.8",
+    "redux-mock-store": "^1.5.3",
     "typescript": "^3.4.5"
   }
 }
