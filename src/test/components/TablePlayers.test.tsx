@@ -43,7 +43,7 @@ describe('Table player should render data always', () => {
         expect(tr).toHaveLength(1);
     });
     it('There should be ONLY 1 Tr in tbody element with empty array', () => {
-        const data=[{name: 'messi', position:"striker", nationality:"argentine", age:"32"}]
+        const data = [{ name: 'messi', position: "striker", nationality: "argentine", age: "32" }]
         const wrapper = mount(<TablePlayers players={data} />);
         const table = wrapper.find('table');
         const tbody = table.find('tbody');

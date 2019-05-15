@@ -53,7 +53,7 @@ describe('players reducer', () => {
         const stateToCheck = {
             isFetching: null,
             players: [],
-            error: "Awkward situation. Api players is not working",
+            error: 'Something is technically wrong.',
         }
         expect(players(
             initialState, errorPlayerrRequest())

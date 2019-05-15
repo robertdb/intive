@@ -26,7 +26,7 @@
   "scripts": {
     "start": "react-scripts-ts start",
     "build": "react-scripts-ts build",
-    "test": "react-scripts-ts test --env=jsdom --coverage",
+    "test": "react-scripts-ts test --env=jsdom --coverage --watchman",
     "eject": "react-scripts-ts eject"
   },
   "devDependencies": {
