@@ -3,20 +3,16 @@
 https://intive-test.netlify.com/
 
 ## Installation
-
-Install through npm:
 ```
 npm install
 ```
 ## Run App
 
-Install through npm:
 ```
 npm start
 ```
 ## Run Test
 
-Install through npm:
 ```
 npm test
 ```
