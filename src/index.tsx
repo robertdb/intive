@@ -9,8 +9,9 @@ const GlobalStyle = createGlobalStyle`
     html {
     }
     body {
+        max-width: 100rem;
+        margin: 0 auto;
         box-sizing: border-box;
-        margin:0; 
         padding: 0;
         line-height: 1.4;
     }

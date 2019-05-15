@@ -7,7 +7,7 @@ import {
 } from './types';
 
 
-const errorRequestMessage = 'Awkward situation. Api players is not working';
+const errorRequestMessage = 'Something is technically wrong.';
 
 // States' definition
 export interface IPlayersReducer {

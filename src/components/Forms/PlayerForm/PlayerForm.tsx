@@ -7,6 +7,9 @@ import {
     Input,
     Select,
     Button,
+    WrapperItem,
+    WrapperSubmit,
+    ErrorInput
 } from './style'
 
 // Aside: You may see InjectedFormikProps<OtherProps, FormValues> instead of what comes below in older code.. 
@@ -36,47 +39,64 @@ export const InnerForm = (props: OtherProps & FormikProps<MyFormValues>) => {
     }
     return (
         <Form onSubmit={handleSubmit} >
-            <Input
-                type="text"
-                onChange={handleChange}
-                onBlur={handleBlur}
-                value={values.name}
-                name="name"
-                placeholder="Player Name"
-            />
-            {touched.name &&
+            <WrapperItem>
+                <Input
+                    type="text"
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    value={values.name}
+                    name="name"
+                    placeholder="Player Name"
+                />
+                {touched.name &&
                 errors.name &&
-                errors.name}
-            <Select
-                name="position"
-                onChange={handleChange}
-                onBlur={handleBlur}
-                value={values.position}
-            >
-                <option value="position">Position</option>
-                {optionsPosition}
-            </Select>
-            {touched.position &&
-                errors.position &&
-                errors.position}
-            <Input
-                type="number"
-                onChange={handleChange}
-                onBlur={handleBlur}
-                value={values.age}
-                name="age"
-                placeholder="Age"
-            />
-            {touched.age &&
-                errors.age &&
-                errors.age}
-            {isSubmitting && <div id="submitting">Submitting</div>}
-            <Button
-                className={'fafa'}
-                type="submit"
-                disabled={isSubmitting}>
-                Submit
-            </Button>
+                <ErrorInput>
+                    {errors.name}
+                 </ErrorInput>
+                }
+            </WrapperItem>
+            <WrapperItem>
+                <Select
+                    name="position"
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    value={values.position}
+                >
+                    <option value="position">Position</option>
+                    {optionsPosition}
+                </Select>
+                {touched.position &&
+                    errors.position &&
+                    <ErrorInput>
+                    {errors.position}
+                 </ErrorInput>
+                   }
+            </WrapperItem>
+            <WrapperItem>
+                <Input
+                    type="number"
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    value={values.age}
+                    name="age"
+                    placeholder="Age"
+                />
+                {touched.age &&
+                    errors.age &&
+                    <ErrorInput>
+                    {errors.age}
+                 </ErrorInput>
+                    }
+            </WrapperItem>
+            <WrapperSubmit>
+                <Button
+                    className={'fafa'}
+                    type="submit"
+                    disabled={isSubmitting}>
+                    {isSubmitting? <span id="submitting">Buscando</span>: 'Buscar' }
+                </Button>              
+            </WrapperSubmit>
+            
         </Form>
     );
 };

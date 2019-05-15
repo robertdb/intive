@@ -10,6 +10,6 @@ export const WrapperTable = styled.div`
     & > table > tbody > tr > td {
         padding: 20px
         font-size: 1rem;
-        background-color: #ccc;
+        background-color: #ededed;
     }
 `;
