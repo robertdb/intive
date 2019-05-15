@@ -13,7 +13,7 @@ npm install
 ## Topics to cover
 First of all, sorry for my English. 
 
-## Why typescript?
+### Why typescript?
 I never used ts in my projects(at work) and I thought that this could be a good moment, to know more.
 
 #### Why Formik?
