@@ -8,6 +8,18 @@ Install through npm:
 ```
 npm install
 ```
+## Run App
+
+Install through npm:
+```
+npm start
+```
+## Run Test
+
+Install through npm:
+```
+npm test
+```
 
 
 ## Topics to cover
@@ -24,4 +36,4 @@ With React 16.8 we can use Hooks to use Redux. We don't have to use library redu
 So I create my folder store and put all files(actions, reducers, types) there.
 
 #### Jest & Enzyme
-I consider myself new in these practices and try to follow TDD methodologies
+I consider myself new in these practices and try to follow TDD methodologies. 
